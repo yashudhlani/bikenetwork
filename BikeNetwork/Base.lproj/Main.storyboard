@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BikeNetwork" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wvt-q7-B4V">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="172"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bike slots" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tBI-CQ-W1v">
+                                        <rect key="frame" x="12" y="96" width="203" height="59"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="172" id="JgK-K5-UzQ"/>
+                                </constraints>
+                            </view>
+                            <searchBar contentMode="redraw" placeholder="Search Cities" translatesAutoresizingMaskIntoConstraints="NO" id="m1K-4F-yX8">
+                                <rect key="frame" x="0.0" y="179" width="414" height="51"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="200" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="x2o-A4-idS">
+                                <rect key="frame" x="8" y="236" width="398" height="639"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="639" id="Pib-Ss-uTX"/>
+                                </constraints>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="m1K-4F-yX8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1aN-gv-Dne"/>
+                            <constraint firstItem="Wvt-q7-B4V" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="8ZO-cz-nKQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="x2o-A4-idS" secondAttribute="trailing" constant="8" id="D3a-Ac-INt"/>
+                            <constraint firstItem="m1K-4F-yX8" firstAttribute="top" secondItem="Wvt-q7-B4V" secondAttribute="bottom" constant="7" id="Jj3-4x-0gR"/>
+                            <constraint firstItem="Wvt-q7-B4V" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="kAj-ZX-UGi"/>
+                            <constraint firstItem="x2o-A4-idS" firstAttribute="top" secondItem="m1K-4F-yX8" secondAttribute="bottom" constant="6" id="lc8-V8-YdE"/>
+                            <constraint firstItem="Wvt-q7-B4V" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mMM-QO-RnE"/>
+                            <constraint firstItem="x2o-A4-idS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="nZs-6R-O11"/>
+                            <constraint firstItem="m1K-4F-yX8" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="w2j-YS-Ib5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="stationTable" destination="x2o-A4-idS" id="cAL-GE-nEW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemCyanColor">
+            <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
