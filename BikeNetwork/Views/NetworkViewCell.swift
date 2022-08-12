@@ -7,9 +7,11 @@
 
 import UIKit
 
-class StationViewCell: UITableViewCell {
+class NetworkViewCell: UITableViewCell {
 
-    @IBOutlet weak var stationName: UILabel!
+    @IBOutlet weak var networkName: UILabel!
+    @IBOutlet weak var companyName: UILabel!
+    @IBOutlet weak var networkAddress: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -17,8 +19,5 @@ class StationViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
-    
 }
