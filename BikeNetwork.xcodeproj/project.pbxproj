@@ -23,19 +23,39 @@
 		8C553D6228985EB500998C15 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C553D6128985EB500998C15 /* Station.swift */; };
 		8C553D642898681C00998C15 /* StationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C553D632898681C00998C15 /* StationViewController.swift */; };
 		8C715ADD28A5942E008003B2 /* ApiManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C715ADC28A5942E008003B2 /* ApiManagerTests.swift */; };
-		8CC4F8D0289AD2DA005D84E4 /* NetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC4F8CF289AD2DA005D84E4 /* NetworkModel.swift */; };
-		8CC4F8D2289B3D35005D84E4 /* StationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC4F8D1289B3D35005D84E4 /* StationModel.swift */; };
+		8CC4F8D0289AD2DA005D84E4 /* BikeNetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC4F8CF289AD2DA005D84E4 /* BikeNetworkModel.swift */; };
+		8CC4F8D2289B3D35005D84E4 /* BikeStationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC4F8D1289B3D35005D84E4 /* BikeStationModel.swift */; };
 		8CC4F8DE289C71A9005D84E4 /* StationInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC4F8DD289C71A9005D84E4 /* StationInfoController.swift */; };
 		8CC4F8DF289F24E4005D84E4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CC4F8D4289C3BDB005D84E4 /* MapKit.framework */; };
 		8CC4F8E728A1ABEE005D84E4 /* BikeNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC4F8E628A1ABEE005D84E4 /* BikeNetworkTests.swift */; };
-		8CC4F8EF28A1BA79005D84E4 /* NetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC4F8EE28A1BA79005D84E4 /* NetworkModel.swift */; };
 		8CC4F8F128A1C04D005D84E4 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC4F8F028A1C04C005D84E4 /* ApiManager.swift */; };
 		8CC4F8F328A1C07C005D84E4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC4F8F228A1C07C005D84E4 /* Constants.swift */; };
 		8CDDA1ED28A5A2A800C7380D /* MockUrlProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDDA1EC28A5A2A800C7380D /* MockUrlProtocol.swift */; };
+		8CDDA1EF28A6FF1D00C7380D /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDDA1EE28A6FF1D00C7380D /* ApiError.swift */; };
+		8CDDA1F128A7032E00C7380D /* NetworkModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDDA1F028A7032E00C7380D /* NetworkModelTests.swift */; };
+		8CDDA1F628A8349200C7380D /* MockApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDDA1F528A8349200C7380D /* MockApiManager.swift */; };
+		8CDDA1F928A8364800C7380D /* ApiManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDDA1F828A8364800C7380D /* ApiManagerProtocol.swift */; };
+		8CDDA1FB28A93C9400C7380D /* MockNetworkViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDDA1FA28A93C9400C7380D /* MockNetworkViewDelegate.swift */; };
+		8CDDA1FD28A9523400C7380D /* StationModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDDA1FC28A9523400C7380D /* StationModelTests.swift */; };
+		8CDDA1FF28A9539200C7380D /* MockStationViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDDA1FE28A9539200C7380D /* MockStationViewDelegate.swift */; };
+		8CDDA20228AD10A400C7380D /* NetworkViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDDA20128AD10A400C7380D /* NetworkViewControllerTest.swift */; };
+		8CDDA20428AD300500C7380D /* BikeNetworkManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDDA20328AD300500C7380D /* BikeNetworkManagerProtocol.swift */; };
+		8CDDA20628AD309500C7380D /* BikeStationManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDDA20528AD309500C7380D /* BikeStationManagerProtocol.swift */; };
+		8CDDA20828AD328400C7380D /* ModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDDA20728AD328400C7380D /* ModelProtocol.swift */; };
+		8CDDA20A28AD339900C7380D /* MockBikeNetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDDA20928AD339800C7380D /* MockBikeNetworkModel.swift */; };
+		8CDFE9A628AD8FB9002F6AA3 /* BikeNetworkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDFE9A528AD8FB9002F6AA3 /* BikeNetworkUITests.swift */; };
+		8CDFE9A828AD8FB9002F6AA3 /* BikeNetworkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDFE9A728AD8FB9002F6AA3 /* BikeNetworkUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		8CC4F8E828A1ABEE005D84E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18B849662892E280009F4501 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18B8496D2892E280009F4501;
+			remoteInfo = BikeNetwork;
+		};
+		8CDFE9A928AD8FB9002F6AA3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 18B849662892E280009F4501 /* Project object */;
 			proxyType = 1;
@@ -66,16 +86,30 @@
 		8C553D6128985EB500998C15 /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
 		8C553D632898681C00998C15 /* StationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationViewController.swift; sourceTree = "<group>"; };
 		8C715ADC28A5942E008003B2 /* ApiManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManagerTests.swift; sourceTree = "<group>"; };
-		8CC4F8CF289AD2DA005D84E4 /* NetworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModel.swift; sourceTree = "<group>"; };
-		8CC4F8D1289B3D35005D84E4 /* StationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationModel.swift; sourceTree = "<group>"; };
+		8CC4F8CF289AD2DA005D84E4 /* BikeNetworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeNetworkModel.swift; sourceTree = "<group>"; };
+		8CC4F8D1289B3D35005D84E4 /* BikeStationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStationModel.swift; sourceTree = "<group>"; };
 		8CC4F8D4289C3BDB005D84E4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		8CC4F8DD289C71A9005D84E4 /* StationInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationInfoController.swift; sourceTree = "<group>"; };
 		8CC4F8E428A1ABED005D84E4 /* BikeNetworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BikeNetworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CC4F8E628A1ABEE005D84E4 /* BikeNetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeNetworkTests.swift; sourceTree = "<group>"; };
-		8CC4F8EE28A1BA79005D84E4 /* NetworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModel.swift; sourceTree = "<group>"; };
 		8CC4F8F028A1C04C005D84E4 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		8CC4F8F228A1C07C005D84E4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8CDDA1EC28A5A2A800C7380D /* MockUrlProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUrlProtocol.swift; sourceTree = "<group>"; };
+		8CDDA1EE28A6FF1D00C7380D /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		8CDDA1F028A7032E00C7380D /* NetworkModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModelTests.swift; sourceTree = "<group>"; };
+		8CDDA1F528A8349200C7380D /* MockApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockApiManager.swift; sourceTree = "<group>"; };
+		8CDDA1F828A8364800C7380D /* ApiManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManagerProtocol.swift; sourceTree = "<group>"; };
+		8CDDA1FA28A93C9400C7380D /* MockNetworkViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkViewDelegate.swift; sourceTree = "<group>"; };
+		8CDDA1FC28A9523400C7380D /* StationModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationModelTests.swift; sourceTree = "<group>"; };
+		8CDDA1FE28A9539200C7380D /* MockStationViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockStationViewDelegate.swift; sourceTree = "<group>"; };
+		8CDDA20128AD10A400C7380D /* NetworkViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkViewControllerTest.swift; sourceTree = "<group>"; };
+		8CDDA20328AD300500C7380D /* BikeNetworkManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeNetworkManagerProtocol.swift; sourceTree = "<group>"; };
+		8CDDA20528AD309500C7380D /* BikeStationManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStationManagerProtocol.swift; sourceTree = "<group>"; };
+		8CDDA20728AD328400C7380D /* ModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelProtocol.swift; sourceTree = "<group>"; };
+		8CDDA20928AD339800C7380D /* MockBikeNetworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockBikeNetworkModel.swift; sourceTree = "<group>"; };
+		8CDFE9A328AD8FB9002F6AA3 /* BikeNetworkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BikeNetworkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CDFE9A528AD8FB9002F6AA3 /* BikeNetworkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeNetworkUITests.swift; sourceTree = "<group>"; };
+		8CDFE9A728AD8FB9002F6AA3 /* BikeNetworkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeNetworkUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9E00AE7F86316A760C22CD8E /* Pods_BikeNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BikeNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -97,6 +131,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8CDFE9A028AD8FB9002F6AA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -105,6 +146,7 @@
 			children = (
 				18B849702892E280009F4501 /* BikeNetwork */,
 				8CC4F8E528A1ABEE005D84E4 /* BikeNetworkTests */,
+				8CDFE9A428AD8FB9002F6AA3 /* BikeNetworkUITests */,
 				18B8496F2892E280009F4501 /* Products */,
 				8CC4F8D3289C3BDB005D84E4 /* Frameworks */,
 				D54854576395A40958918BC5 /* Pods */,
@@ -116,6 +158,7 @@
 			children = (
 				18B8496E2892E280009F4501 /* BikeNetwork.app */,
 				8CC4F8E428A1ABED005D84E4 /* BikeNetworkTests.xctest */,
+				8CDFE9A328AD8FB9002F6AA3 /* BikeNetworkUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -123,6 +166,7 @@
 		18B849702892E280009F4501 /* BikeNetwork */ = {
 			isa = PBXGroup;
 			children = (
+				8CDDA1F728A8363400C7380D /* Protocols */,
 				8CC4F8CE289AD2B4005D84E4 /* ViewModel */,
 				8CC4F8CA289AD20B005D84E4 /* Views */,
 				18B849712892E280009F4501 /* AppDelegate.swift */,
@@ -171,8 +215,8 @@
 		8CC4F8CE289AD2B4005D84E4 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				8CC4F8CF289AD2DA005D84E4 /* NetworkModel.swift */,
-				8CC4F8D1289B3D35005D84E4 /* StationModel.swift */,
+				8CC4F8CF289AD2DA005D84E4 /* BikeNetworkModel.swift */,
+				8CC4F8D1289B3D35005D84E4 /* BikeStationModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -190,10 +234,11 @@
 		8CC4F8E528A1ABEE005D84E4 /* BikeNetworkTests */ = {
 			isa = PBXGroup;
 			children = (
+				8CDDA20028AD107B00C7380D /* Controller */,
 				8CC4F8E628A1ABEE005D84E4 /* BikeNetworkTests.swift */,
-				8CC4F8EE28A1BA79005D84E4 /* NetworkModel.swift */,
-				8C715ADC28A5942E008003B2 /* ApiManagerTests.swift */,
-				8CDDA1EC28A5A2A800C7380D /* MockUrlProtocol.swift */,
+				8CDDA1F328A8346100C7380D /* Helper */,
+				8CDDA1F428A8347400C7380D /* Mock */,
+				8CDDA1F228A8345100C7380D /* Model */,
 			);
 			path = BikeNetworkTests;
 			sourceTree = "<group>";
@@ -203,8 +248,66 @@
 			children = (
 				8CC4F8F028A1C04C005D84E4 /* ApiManager.swift */,
 				8CC4F8F228A1C07C005D84E4 /* Constants.swift */,
+				8CDDA1EE28A6FF1D00C7380D /* ApiError.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		8CDDA1F228A8345100C7380D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8CDDA1F028A7032E00C7380D /* NetworkModelTests.swift */,
+				8CDDA1FC28A9523400C7380D /* StationModelTests.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8CDDA1F328A8346100C7380D /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				8C715ADC28A5942E008003B2 /* ApiManagerTests.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		8CDDA1F428A8347400C7380D /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				8CDDA1EC28A5A2A800C7380D /* MockUrlProtocol.swift */,
+				8CDDA1F528A8349200C7380D /* MockApiManager.swift */,
+				8CDDA1FA28A93C9400C7380D /* MockNetworkViewDelegate.swift */,
+				8CDDA1FE28A9539200C7380D /* MockStationViewDelegate.swift */,
+				8CDDA20928AD339800C7380D /* MockBikeNetworkModel.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		8CDDA1F728A8363400C7380D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				8CDDA1F828A8364800C7380D /* ApiManagerProtocol.swift */,
+				8CDDA20328AD300500C7380D /* BikeNetworkManagerProtocol.swift */,
+				8CDDA20528AD309500C7380D /* BikeStationManagerProtocol.swift */,
+				8CDDA20728AD328400C7380D /* ModelProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		8CDDA20028AD107B00C7380D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8CDDA20128AD10A400C7380D /* NetworkViewControllerTest.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8CDFE9A428AD8FB9002F6AA3 /* BikeNetworkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8CDFE9A528AD8FB9002F6AA3 /* BikeNetworkUITests.swift */,
+				8CDFE9A728AD8FB9002F6AA3 /* BikeNetworkUITestsLaunchTests.swift */,
+			);
+			path = BikeNetworkUITests;
 			sourceTree = "<group>";
 		};
 		D54854576395A40958918BC5 /* Pods */ = {
@@ -259,6 +362,24 @@
 			productReference = 8CC4F8E428A1ABED005D84E4 /* BikeNetworkTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		8CDFE9A228AD8FB9002F6AA3 /* BikeNetworkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CDFE9AD28AD8FB9002F6AA3 /* Build configuration list for PBXNativeTarget "BikeNetworkUITests" */;
+			buildPhases = (
+				8CDFE99F28AD8FB9002F6AA3 /* Sources */,
+				8CDFE9A028AD8FB9002F6AA3 /* Frameworks */,
+				8CDFE9A128AD8FB9002F6AA3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8CDFE9AA28AD8FB9002F6AA3 /* PBXTargetDependency */,
+			);
+			name = BikeNetworkUITests;
+			productName = BikeNetworkUITests;
+			productReference = 8CDFE9A328AD8FB9002F6AA3 /* BikeNetworkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -273,6 +394,10 @@
 						CreatedOnToolsVersion = 13.4.1;
 					};
 					8CC4F8E328A1ABED005D84E4 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 18B8496D2892E280009F4501;
+					};
+					8CDFE9A228AD8FB9002F6AA3 = {
 						CreatedOnToolsVersion = 13.4.1;
 						TestTargetID = 18B8496D2892E280009F4501;
 					};
@@ -293,6 +418,7 @@
 			targets = (
 				18B8496D2892E280009F4501 /* BikeNetwork */,
 				8CC4F8E328A1ABED005D84E4 /* BikeNetworkTests */,
+				8CDFE9A228AD8FB9002F6AA3 /* BikeNetworkUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -311,6 +437,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		8CC4F8E228A1ABED005D84E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CDFE9A128AD8FB9002F6AA3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -388,15 +521,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CDDA20628AD309500C7380D /* BikeStationManagerProtocol.swift in Sources */,
 				8C553D5C28982B4B00998C15 /* Network.swift in Sources */,
 				18B849762892E280009F4501 /* NetworkViewController.swift in Sources */,
-				8CC4F8D2289B3D35005D84E4 /* StationModel.swift in Sources */,
+				8CC4F8D2289B3D35005D84E4 /* BikeStationModel.swift in Sources */,
+				8CDDA1F928A8364800C7380D /* ApiManagerProtocol.swift in Sources */,
 				18F472B12893337F00800F17 /* NetworkViewCell.swift in Sources */,
 				8CC4F8F128A1C04D005D84E4 /* ApiManager.swift in Sources */,
-				8CC4F8D0289AD2DA005D84E4 /* NetworkModel.swift in Sources */,
+				8CC4F8D0289AD2DA005D84E4 /* BikeNetworkModel.swift in Sources */,
 				8C553D5F2898544300998C15 /* StationViewCell.swift in Sources */,
+				8CDDA1EF28A6FF1D00C7380D /* ApiError.swift in Sources */,
 				8CC4F8F328A1C07C005D84E4 /* Constants.swift in Sources */,
+				8CDDA20428AD300500C7380D /* BikeNetworkManagerProtocol.swift in Sources */,
 				18B849722892E280009F4501 /* AppDelegate.swift in Sources */,
+				8CDDA20828AD328400C7380D /* ModelProtocol.swift in Sources */,
 				18B849742892E280009F4501 /* SceneDelegate.swift in Sources */,
 				8CC4F8DE289C71A9005D84E4 /* StationInfoController.swift in Sources */,
 				8C553D6228985EB500998C15 /* Station.swift in Sources */,
@@ -408,10 +546,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CC4F8EF28A1BA79005D84E4 /* NetworkModel.swift in Sources */,
+				8CDDA1F628A8349200C7380D /* MockApiManager.swift in Sources */,
+				8CDDA1F128A7032E00C7380D /* NetworkModelTests.swift in Sources */,
+				8CDDA1FF28A9539200C7380D /* MockStationViewDelegate.swift in Sources */,
 				8C715ADD28A5942E008003B2 /* ApiManagerTests.swift in Sources */,
+				8CDDA20228AD10A400C7380D /* NetworkViewControllerTest.swift in Sources */,
+				8CDDA1FD28A9523400C7380D /* StationModelTests.swift in Sources */,
 				8CC4F8E728A1ABEE005D84E4 /* BikeNetworkTests.swift in Sources */,
+				8CDDA20A28AD339900C7380D /* MockBikeNetworkModel.swift in Sources */,
+				8CDDA1FB28A93C9400C7380D /* MockNetworkViewDelegate.swift in Sources */,
 				8CDDA1ED28A5A2A800C7380D /* MockUrlProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CDFE99F28AD8FB9002F6AA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CDFE9A828AD8FB9002F6AA3 /* BikeNetworkUITestsLaunchTests.swift in Sources */,
+				8CDFE9A628AD8FB9002F6AA3 /* BikeNetworkUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +575,11 @@
 			isa = PBXTargetDependency;
 			target = 18B8496D2892E280009F4501 /* BikeNetwork */;
 			targetProxy = 8CC4F8E828A1ABEE005D84E4 /* PBXContainerItemProxy */;
+		};
+		8CDFE9AA28AD8FB9002F6AA3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18B8496D2892E280009F4501 /* BikeNetwork */;
+			targetProxy = 8CDFE9A928AD8FB9002F6AA3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -653,6 +811,38 @@
 			};
 			name = Release;
 		};
+		8CDFE9AB28AD8FB9002F6AA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sapient.BikeNetworkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BikeNetwork;
+			};
+			name = Debug;
+		};
+		8CDFE9AC28AD8FB9002F6AA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sapient.BikeNetworkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BikeNetwork;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -679,6 +869,15 @@
 			buildConfigurations = (
 				8CC4F8EB28A1ABEE005D84E4 /* Debug */,
 				8CC4F8EC28A1ABEE005D84E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CDFE9AD28AD8FB9002F6AA3 /* Build configuration list for PBXNativeTarget "BikeNetworkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CDFE9AB28AD8FB9002F6AA3 /* Debug */,
+				8CDFE9AC28AD8FB9002F6AA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

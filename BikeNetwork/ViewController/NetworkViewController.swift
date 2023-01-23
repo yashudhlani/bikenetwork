@@ -1,32 +1,27 @@
 import UIKit
 
-class NetworkViewController: UIViewController, NetworkManagerDelegate {
+class NetworkViewController: UIViewController {
 
     @IBOutlet weak var networkTable: UITableView!
     @IBOutlet weak var searchNetwork: UISearchBar!
     var networks: [Network] = []
     var filteredNetworks: [Network] = []
-    var networkModel: NetworkModel?
+    var networkModel: BikeNetworkModelDelegate?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        networkModel = NetworkModel(ApiManager())
+        if networkModel == nil {
+            networkModel = BikeNetworkModel(ApiManager(), self)
+        }
+        
+        self.networkTable.accessibilityIdentifier = "networkTable"
         self.networkTable.dataSource = self
         self.networkTable.delegate = self
-        self.networkModel!.delegate = self
         self.searchNetwork.delegate = self
-        networkModel!.fetchNetworks()
+        self.networkModel?.fetchNetworks()
         self.networkTable
             .register(UINib(nibName: "NetworkViewCell", bundle: nil), forCellReuseIdentifier: "networkCell")
-    }
-
-    func setNetwork(_ networks: [Network]) {
-        DispatchQueue.main.async {
-            self.networks = networks
-            self.filteredNetworks = networks
-            self.networkTable.reloadData()
-        }
     }
 }
 
@@ -86,5 +81,30 @@ extension NetworkViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         searchNetwork.showsCancelButton = false
         searchNetwork.resignFirstResponder()
+    }
+}
+
+extension NetworkViewController: BikeNetworkManagerDelegate {
+    func setNetwork(_ networks: [Network]) {
+        DispatchQueue.main.async {
+            self.networks = networks
+            self.filteredNetworks = networks
+            self.networkTable.reloadData()
+        }
+    }
+
+    func showError(_ error: Error) {
+        var errorMessage: String?
+        if let error = error as? ApiError {
+            errorMessage = error.errorDescription
+        } else {
+            errorMessage = ApiError.networkError.errorDescription
+        }
+        DispatchQueue.main.async {
+            let errorAlert = UIAlertController(title: "Error", message: errorMessage, preferredStyle: .alert)
+            let okButton = UIAlertAction(title: "ok", style: .default)
+            errorAlert.addAction(okButton)
+            self.present(errorAlert, animated: true)
+        }
     }
 }

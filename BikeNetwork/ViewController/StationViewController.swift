@@ -7,7 +7,7 @@
 
 import UIKit
 
-class StationViewController: UIViewController, StationModelUpdate {
+class StationViewController: UIViewController, BikeStationManagerDelegate {
 
     @IBOutlet weak var stationCollection: UICollectionView!
 
@@ -15,18 +15,19 @@ class StationViewController: UIViewController, StationModelUpdate {
 
     var networkName: String?
     var stationsUrl: String?
-    var stationModel: StationModel?
+    var stationModel: BikeStationModel?
     var stations: [Station] = []
     var filteredStations: [Station] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
         networkTitle.text = networkName
-        
-        stationModel = StationModel(ApiManager())
+
+        stationModel = BikeStationModel(ApiManager())
         stationCollection.dataSource = self
         stationCollection.delegate = self
         stationModel!.delegate = self
+        stationCollection.accessibilityIdentifier = "stationCollection_\(networkName!)"
         let url = URL(string: String("\(Contants.DOMAIN)\(stationsUrl!)"))
         stationModel!.fetchStations(url!)
         stationCollection.register(UINib(nibName: "StationViewCell", bundle: nil),
@@ -46,6 +47,21 @@ class StationViewController: UIViewController, StationModelUpdate {
             self.stations = network.stations!
             self.filteredStations = network.stations!
             self.stationCollection.reloadData()
+        }
+    }
+
+    func showError(_ error: Error) {
+        var errorMessage: String?
+        if let error = error as? ApiError {
+            errorMessage = error.errorDescription
+        } else {
+            errorMessage = ApiError.networkError.errorDescription
+        }
+        DispatchQueue.main.async {
+            let errorAlert = UIAlertController(title: "Error", message: errorMessage, preferredStyle: .alert)
+            let ok = UIAlertAction(title: "ok", style: .default)
+            errorAlert.addAction(ok)
+            self.present(errorAlert, animated: true)
         }
     }
 }
